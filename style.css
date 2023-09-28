@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+ :note(i) {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: lightgreen;    
+}
+
+.container {
+    background-color: #b4cf78;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+
+}
+
+.search-box input {
+    padding: 5px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid coral;
+    font-size: 16px;
+    background-color: rgb(32, 231, 165);
+    border-radius: 5px;
+
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box button{
+    cursor: pointer;
+    background-color: rgb(120, 182, 197);
+    width: 25%;
+    padding: 15px;
+    outline: none;
+    color: #020700;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+
+
+}
+.result h3{
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button{
+    cursor: pointer;
+    background-color: transparent;
+    color: #341aa8;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: #071287;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning{
+    color: #575a7b;
+}
+
+.word-example{
+    font-style: italic;
+    color: #575a7b;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error{
+    margin-top: 80px;
+    text-align: center;
+    color: red;
+    text-shadow: 1px 3px 8px rgb(224, 94, 13)
+}
